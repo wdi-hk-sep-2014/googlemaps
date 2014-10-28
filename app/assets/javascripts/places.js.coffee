@@ -16,6 +16,18 @@
     handler.bounds.extendWith markers
     handler.fitMapToBounds()
 
+@convert = (objects) ->
+  array = []
+
+  for x in objects
+    y =
+      lat: x.lat
+      lng: x.lng
+      infowindow: x.name
+    array.push y
+
+  googleMap array
+
 content = [
   {lat: 0, lng: 0,infowindow: "hello!", link: 'a'},
   {lat: 20, lng: 120,infowindow: "hello!", link: 'b'}
