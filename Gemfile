@@ -3,6 +3,14 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
+# Show Google Maps in rails application
+gem 'gmaps4rails'
+
+# Geocoding solution in rails application
+gem 'geocoder'
+
+# Frontend JavaScript library used by Google Map Utilities
+gem 'underscore-rails'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
