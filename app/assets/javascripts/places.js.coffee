@@ -4,3 +4,15 @@
 #
 #= require underscore
 #= require gmaps/google
+
+@googleMap = (content) ->
+  handler = Gmaps.build("Google")
+  handler.buildMap
+    provider: {}
+    internal:
+      id: "map"
+  , ->
+    markers = handler.addMarkers(content)
+    handler.bounds.extendWith markers
+    handler.fitMapToBounds()
+
