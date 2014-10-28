@@ -7,6 +7,10 @@ class PlacesController < ApplicationController
     @places = Place.all
   end
 
+  # GET /map
+  def map
+  end
+
   # GET /places/1
   # GET /places/1.json
   def show
