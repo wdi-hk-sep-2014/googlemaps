@@ -28,13 +28,8 @@
 
   googleMap array
 
-content = [
-  {lat: 0, lng: 0,infowindow: "hello!", link: 'a'},
-  {lat: 20, lng: 120,infowindow: "hello!", link: 'b'}
-]
-
 $ ->
   $.ajax
     url: '/places.json'
   .done (data) ->
-    googleMap content
+    convert data
